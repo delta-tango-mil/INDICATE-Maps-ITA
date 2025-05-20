@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3629e5ce445843462e0acbf0ac7176f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3629e5ce445843462e0acbf0ac7176f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3629e5ce445843462e0acbf0ac7176f0 = L.map(
+                "map_3629e5ce445843462e0acbf0ac7176f0",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e4829fc845de663e774f60286f4c52df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+            var circle_marker_d9c1450a1635ae42383147d6f5762524 = L.circleMarker(
+                [43.4801189, 13.2187279],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_57de7c405b24caa1e479c448f03e3f97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f30d6f0fe2135be32b188e0e54cedd9 = $(`<div id="html_7f30d6f0fe2135be32b188e0e54cedd9" style="width: 100.0%; height: 100.0%;">Ancona: Seismic Zone 2</div>`)[0];
+            popup_57de7c405b24caa1e479c448f03e3f97.setContent(html_7f30d6f0fe2135be32b188e0e54cedd9);
+        
+
+        circle_marker_d9c1450a1635ae42383147d6f5762524.bindPopup(popup_57de7c405b24caa1e479c448f03e3f97)
+        ;
+
+        
+    
+    
+            var circle_marker_b35f9da0bf11f2e0cab971390b95d5d0 = L.circleMarker(
+                [41.1257843, 16.8620293],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_2a2b076ce9b3a84a4b8593693ff7ec02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc480672bba9de2ed320b9de0e8b6be = $(`<div id="html_5fc480672bba9de2ed320b9de0e8b6be" style="width: 100.0%; height: 100.0%;">Bari: Seismic Zone 3</div>`)[0];
+            popup_2a2b076ce9b3a84a4b8593693ff7ec02.setContent(html_5fc480672bba9de2ed320b9de0e8b6be);
+        
+
+        circle_marker_b35f9da0bf11f2e0cab971390b95d5d0.bindPopup(popup_2a2b076ce9b3a84a4b8593693ff7ec02)
+        ;
+
+        
+    
+    
+            var circle_marker_fa58369a279ac9c117d64c1b7f2104d8 = L.circleMarker(
+                [44.4938203, 11.3426327],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_e01d67d12e5bacac124605cbe633780f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bb5f95f25c57ff93bac8c6e23c521de = $(`<div id="html_0bb5f95f25c57ff93bac8c6e23c521de" style="width: 100.0%; height: 100.0%;">Bologna: Seismic Zone 3</div>`)[0];
+            popup_e01d67d12e5bacac124605cbe633780f.setContent(html_0bb5f95f25c57ff93bac8c6e23c521de);
+        
+
+        circle_marker_fa58369a279ac9c117d64c1b7f2104d8.bindPopup(popup_e01d67d12e5bacac124605cbe633780f)
+        ;
+
+        
+    
+    
+            var circle_marker_18dd9d1538e541d06cbeef0e2a981c7d = L.circleMarker(
+                [44.3956758, 7.8760035],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_ac48de4c7d07353028c6643c539e2104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e97fc3cb522166b044e1afadabd3f667 = $(`<div id="html_e97fc3cb522166b044e1afadabd3f667" style="width: 100.0%; height: 100.0%;">Briaglia: Seismic Zone 4</div>`)[0];
+            popup_ac48de4c7d07353028c6643c539e2104.setContent(html_e97fc3cb522166b044e1afadabd3f667);
+        
+
+        circle_marker_18dd9d1538e541d06cbeef0e2a981c7d.bindPopup(popup_ac48de4c7d07353028c6643c539e2104)
+        ;
+
+        
+    
+    
+            var circle_marker_8cb6a979016a72701e0ba67003bdf524 = L.circleMarker(
+                [44.9714155, 7.7786983],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_4e86377430a4af8423b1d23eb7bb6ddf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e2309469232eac028259122b39c9bf4 = $(`<div id="html_0e2309469232eac028259122b39c9bf4" style="width: 100.0%; height: 100.0%;">Cambiano: Seismic Zone 3</div>`)[0];
+            popup_4e86377430a4af8423b1d23eb7bb6ddf.setContent(html_0e2309469232eac028259122b39c9bf4);
+        
+
+        circle_marker_8cb6a979016a72701e0ba67003bdf524.bindPopup(popup_4e86377430a4af8423b1d23eb7bb6ddf)
+        ;
+
+        
+    
+    
+            var circle_marker_3976ed8ba522f8caf466678f5f5fc911 = L.circleMarker(
+                [41.034313, 13.9408351],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_2f5389837a3890f61dc0773e5618f885 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35662055df674b61a37f645c1260d4f4 = $(`<div id="html_35662055df674b61a37f645c1260d4f4" style="width: 100.0%; height: 100.0%;">Castel Volturno: Seismic Zone 3</div>`)[0];
+            popup_2f5389837a3890f61dc0773e5618f885.setContent(html_35662055df674b61a37f645c1260d4f4);
+        
+
+        circle_marker_3976ed8ba522f8caf466678f5f5fc911.bindPopup(popup_2f5389837a3890f61dc0773e5618f885)
+        ;
+
+        
+    
+    
+            var circle_marker_613f0761478f30c832ed1e18980b54b6 = L.circleMarker(
+                [38.8299603, 16.4315569],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_3f6abafc257b49e521f7ddd3818ca047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bc01222d7060d21251255e535017319 = $(`<div id="html_3bc01222d7060d21251255e535017319" style="width: 100.0%; height: 100.0%;">Catanzaro: Seismic Zone 2</div>`)[0];
+            popup_3f6abafc257b49e521f7ddd3818ca047.setContent(html_3bc01222d7060d21251255e535017319);
+        
+
+        circle_marker_613f0761478f30c832ed1e18980b54b6.bindPopup(popup_3f6abafc257b49e521f7ddd3818ca047)
+        ;
+
+        
+    
+    
+            var circle_marker_8afe9f112d91ec373b4c2393215f8e44 = L.circleMarker(
+                [44.136352, 12.2422442],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_40036a13e82fe931d2efc6ee4a5a040d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15bff2dbdff0aacb60eee55f3a713ffc = $(`<div id="html_15bff2dbdff0aacb60eee55f3a713ffc" style="width: 100.0%; height: 100.0%;">Cesena: Seismic Zone 2</div>`)[0];
+            popup_40036a13e82fe931d2efc6ee4a5a040d.setContent(html_15bff2dbdff0aacb60eee55f3a713ffc);
+        
+
+        circle_marker_8afe9f112d91ec373b4c2393215f8e44.bindPopup(popup_40036a13e82fe931d2efc6ee4a5a040d)
+        ;
+
+        
+    
+    
+            var circle_marker_c0a17b12112ea3461e43f5455cc82ac8 = L.circleMarker(
+                [42.1026928, 14.4159053],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_fde0f33c8c9be6d45412081cfc6f843c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_967faf8b3d668b2200636abb45d82566 = $(`<div id="html_967faf8b3d668b2200636abb45d82566" style="width: 100.0%; height: 100.0%;">Chieti: Seismic Zone 2</div>`)[0];
+            popup_fde0f33c8c9be6d45412081cfc6f843c.setContent(html_967faf8b3d668b2200636abb45d82566);
+        
+
+        circle_marker_c0a17b12112ea3461e43f5455cc82ac8.bindPopup(popup_fde0f33c8c9be6d45412081cfc6f843c)
+        ;
+
+        
+    
+    
+            var circle_marker_c6f6bc0b5aa50913d82871177b15e639 = L.circleMarker(
+                [46.5383332, 12.1373506],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_8f9c49c7876c5e43e551319af8e1e97a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75541f2cf67fd5249b38772bd3e9b7b9 = $(`<div id="html_75541f2cf67fd5249b38772bd3e9b7b9" style="width: 100.0%; height: 100.0%;">Cortina d&#39;Ampezzo: Seismic Zone 3</div>`)[0];
+            popup_8f9c49c7876c5e43e551319af8e1e97a.setContent(html_75541f2cf67fd5249b38772bd3e9b7b9);
+        
+
+        circle_marker_c6f6bc0b5aa50913d82871177b15e639.bindPopup(popup_8f9c49c7876c5e43e551319af8e1e97a)
+        ;
+
+        
+    
+    
+            var circle_marker_d57b10a03118f58077988845e9348098 = L.circleMarker(
+                [44.5307822, 7.9472329],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_ac5870ce21765ce758b3973723cac16c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f45ba7b6f5c0a93eede7500a7ebc8913 = $(`<div id="html_f45ba7b6f5c0a93eede7500a7ebc8913" style="width: 100.0%; height: 100.0%;">Dogliani: Seismic Zone 4</div>`)[0];
+            popup_ac5870ce21765ce758b3973723cac16c.setContent(html_f45ba7b6f5c0a93eede7500a7ebc8913);
+        
+
+        circle_marker_d57b10a03118f58077988845e9348098.bindPopup(popup_ac5870ce21765ce758b3973723cac16c)
+        ;
+
+        
+    
+    
+            var circle_marker_604eb90abd9637b56fc147436d624716 = L.circleMarker(
+                [44.5307822, 7.9472329],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_bbae5af667fca668e60534313d596db3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22eb62c1010d2eb2947e46a3450a5a94 = $(`<div id="html_22eb62c1010d2eb2947e46a3450a5a94" style="width: 100.0%; height: 100.0%;">Fiorano Modenese: Seismic Zone 2</div>`)[0];
+            popup_bbae5af667fca668e60534313d596db3.setContent(html_22eb62c1010d2eb2947e46a3450a5a94);
+        
+
+        circle_marker_604eb90abd9637b56fc147436d624716.bindPopup(popup_bbae5af667fca668e60534313d596db3)
+        ;
+
+        
+    
+    
+            var circle_marker_5bf086be33f8196ce8057e1d8af1eaee = L.circleMarker(
+                [43.7697955, 11.2556404],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_84347fbc6276d85666328fb15afcd514 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29f9ceea9ad9dda092f01f1662ab7fb4 = $(`<div id="html_29f9ceea9ad9dda092f01f1662ab7fb4" style="width: 100.0%; height: 100.0%;">Firenze: Seismic Zone 3</div>`)[0];
+            popup_84347fbc6276d85666328fb15afcd514.setContent(html_29f9ceea9ad9dda092f01f1662ab7fb4);
+        
+
+        circle_marker_5bf086be33f8196ce8057e1d8af1eaee.bindPopup(popup_84347fbc6276d85666328fb15afcd514)
+        ;
+
+        
+    
+    
+            var circle_marker_9c058f8a95b94ffeec83916c085794d4 = L.circleMarker(
+                [43.9595891, 10.1699392],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_ac8cd431d5145e5477fb87375891998f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b867105cb640421d3e3120f2107727a2 = $(`<div id="html_b867105cb640421d3e3120f2107727a2" style="width: 100.0%; height: 100.0%;">Forte dei Marmi: Seismic Zone 3</div>`)[0];
+            popup_ac8cd431d5145e5477fb87375891998f.setContent(html_b867105cb640421d3e3120f2107727a2);
+        
+
+        circle_marker_9c058f8a95b94ffeec83916c085794d4.bindPopup(popup_ac8cd431d5145e5477fb87375891998f)
+        ;
+
+        
+    
+    
+            var circle_marker_53bbd309949b9feac1b918cd3f14dd86 = L.circleMarker(
+                [45.8175344, 9.3750153],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_124d8347c82339db494a8b57b50504b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab9582b82b67df209d62aa51d69c800a = $(`<div id="html_ab9582b82b67df209d62aa51d69c800a" style="width: 100.0%; height: 100.0%;">Galbiate: Seismic Zone 3</div>`)[0];
+            popup_124d8347c82339db494a8b57b50504b0.setContent(html_ab9582b82b67df209d62aa51d69c800a);
+        
+
+        circle_marker_53bbd309949b9feac1b918cd3f14dd86.bindPopup(popup_124d8347c82339db494a8b57b50504b0)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd6baa875a51209fc51b2be478f8ca9 = L.circleMarker(
+                [40.734205, 13.947125],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_f5884c6d53d0b5ecb8366863c0481c3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a7cf39f8427ca53582ce5b530eba282 = $(`<div id="html_3a7cf39f8427ca53582ce5b530eba282" style="width: 100.0%; height: 100.0%;">Ischia: Seismic Zone 2</div>`)[0];
+            popup_f5884c6d53d0b5ecb8366863c0481c3f.setContent(html_3a7cf39f8427ca53582ce5b530eba282);
+        
+
+        circle_marker_fcd6baa875a51209fc51b2be478f8ca9.bindPopup(popup_f5884c6d53d0b5ecb8366863c0481c3f)
+        ;
+
+        
+    
+    
+            var circle_marker_ce95015e105c040eb739ae4d8387f66b = L.circleMarker(
+                [45.815457, 8.6101375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_25c1226a9a407ccec4a1a7e60c5398d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55d58698d857b1c7f0c4b6fedad745bb = $(`<div id="html_55d58698d857b1c7f0c4b6fedad745bb" style="width: 100.0%; height: 100.0%;">Ispra: Seismic Zone 4</div>`)[0];
+            popup_25c1226a9a407ccec4a1a7e60c5398d4.setContent(html_55d58698d857b1c7f0c4b6fedad745bb);
+        
+
+        circle_marker_ce95015e105c040eb739ae4d8387f66b.bindPopup(popup_25c1226a9a407ccec4a1a7e60c5398d4)
+        ;
+
+        
+    
+    
+            var circle_marker_2f74f7c69ef0e292855cf8cee1497aa9 = L.circleMarker(
+                [43.5219801, 13.2443764],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_fd9217b448777434e2af9deb7d3f372d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cbbabc80ed56bde7db1ddf76d672cdd = $(`<div id="html_6cbbabc80ed56bde7db1ddf76d672cdd" style="width: 100.0%; height: 100.0%;">Jesi: Seismic Zone 2</div>`)[0];
+            popup_fd9217b448777434e2af9deb7d3f372d.setContent(html_6cbbabc80ed56bde7db1ddf76d672cdd);
+        
+
+        circle_marker_2f74f7c69ef0e292855cf8cee1497aa9.bindPopup(popup_fd9217b448777434e2af9deb7d3f372d)
+        ;
+
+        
+    
+    
+            var circle_marker_d325685036eb4b5cd03d535999bd3eb3 = L.circleMarker(
+                [45.4641943, 9.1896346],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_8a3f2b818634a8a72c0136966a76de6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ce91912bb39886055b892805303c509 = $(`<div id="html_1ce91912bb39886055b892805303c509" style="width: 100.0%; height: 100.0%;">Milano: Seismic Zone 3</div>`)[0];
+            popup_8a3f2b818634a8a72c0136966a76de6b.setContent(html_1ce91912bb39886055b892805303c509);
+        
+
+        circle_marker_d325685036eb4b5cd03d535999bd3eb3.bindPopup(popup_8a3f2b818634a8a72c0136966a76de6b)
+        ;
+
+        
+    
+    
+            var circle_marker_9924c790c2415441fa84c44153c3043d = L.circleMarker(
+                [36.8589209, 14.7613018],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_be4638be32f1efdbc5c248b1b7cf7f88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ac5ee46bdd268226290b463a10b7c42 = $(`<div id="html_0ac5ee46bdd268226290b463a10b7c42" style="width: 100.0%; height: 100.0%;">Modica: Seismic Zone 2</div>`)[0];
+            popup_be4638be32f1efdbc5c248b1b7cf7f88.setContent(html_0ac5ee46bdd268226290b463a10b7c42);
+        
+
+        circle_marker_9924c790c2415441fa84c44153c3043d.bindPopup(popup_be4638be32f1efdbc5c248b1b7cf7f88)
+        ;
+
+        
+    
+    
+            var circle_marker_64dec56bfd30a632c2c0ae459a432570 = L.circleMarker(
+                [43.5529373, 10.9127727],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_59028f2dbeeadf95edeb791c92001a0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97cb202fbc7cd01f054960b1952a555d = $(`<div id="html_97cb202fbc7cd01f054960b1952a555d" style="width: 100.0%; height: 100.0%;">Montaione: Seismic Zone 3</div>`)[0];
+            popup_59028f2dbeeadf95edeb791c92001a0e.setContent(html_97cb202fbc7cd01f054960b1952a555d);
+        
+
+        circle_marker_64dec56bfd30a632c2c0ae459a432570.bindPopup(popup_59028f2dbeeadf95edeb791c92001a0e)
+        ;
+
+        
+    
+    
+            var circle_marker_16924df76e4a6cd0234f3a41bab05570 = L.circleMarker(
+                [44.595438, 7.869835],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_639d9d2d051582a41cf4cb93267c6285 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fffeb8851f9340709fab60a80834ae1 = $(`<div id="html_7fffeb8851f9340709fab60a80834ae1" style="width: 100.0%; height: 100.0%;">Narzole: Seismic Zone 4</div>`)[0];
+            popup_639d9d2d051582a41cf4cb93267c6285.setContent(html_7fffeb8851f9340709fab60a80834ae1);
+        
+
+        circle_marker_16924df76e4a6cd0234f3a41bab05570.bindPopup(popup_639d9d2d051582a41cf4cb93267c6285)
+        ;
+
+        
+    
+    
+            var circle_marker_0531239db6473c252a55d9136e96ded2 = L.circleMarker(
+                [40.76174, 15.98818],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_8c5de337aaaf6773c607bce3569953ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4534c8ebe699719f93c7ae49a4dd14e0 = $(`<div id="html_4534c8ebe699719f93c7ae49a4dd14e0" style="width: 100.0%; height: 100.0%;">Oppido Lucano: Seismic Zone 2</div>`)[0];
+            popup_8c5de337aaaf6773c607bce3569953ff.setContent(html_4534c8ebe699719f93c7ae49a4dd14e0);
+        
+
+        circle_marker_0531239db6473c252a55d9136e96ded2.bindPopup(popup_8c5de337aaaf6773c607bce3569953ff)
+        ;
+
+        
+    
+    
+            var circle_marker_5be623db7130191997aa9b25152a14d2 = L.circleMarker(
+                [40.0265676, 8.6796416],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_6956f9caae8df41f1fda9ae65da482d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fdc424d66cf45eb2896a546572d7a6d = $(`<div id="html_5fdc424d66cf45eb2896a546572d7a6d" style="width: 100.0%; height: 100.0%;">Oristano: Seismic Zone 4</div>`)[0];
+            popup_6956f9caae8df41f1fda9ae65da482d3.setContent(html_5fdc424d66cf45eb2896a546572d7a6d);
+        
+
+        circle_marker_5be623db7130191997aa9b25152a14d2.bindPopup(popup_6956f9caae8df41f1fda9ae65da482d3)
+        ;
+
+        
+    
+    
+            var circle_marker_916fd69501d7d2699396a9f03ae3caac = L.circleMarker(
+                [39.359893, 16.039588],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_8b320d55ae122890029dc2c20ece0cbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_025390d0fd88d9c8a667f2badb5d9a57 = $(`<div id="html_025390d0fd88d9c8a667f2badb5d9a57" style="width: 100.0%; height: 100.0%;">Paola: Seismic Zone 2</div>`)[0];
+            popup_8b320d55ae122890029dc2c20ece0cbb.setContent(html_025390d0fd88d9c8a667f2badb5d9a57);
+        
+
+        circle_marker_916fd69501d7d2699396a9f03ae3caac.bindPopup(popup_8b320d55ae122890029dc2c20ece0cbb)
+        ;
+
+        
+    
+    
+            var circle_marker_62f1da34a8680ba8a399cbfb22eead2c = L.circleMarker(
+                [43.9098114, 12.9131228],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_f3955a6ce69a8093c09aab155af0eff0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e45585722a7484ec00782195aad2fc9d = $(`<div id="html_e45585722a7484ec00782195aad2fc9d" style="width: 100.0%; height: 100.0%;">Pesaro: Seismic Zone 2</div>`)[0];
+            popup_f3955a6ce69a8093c09aab155af0eff0.setContent(html_e45585722a7484ec00782195aad2fc9d);
+        
+
+        circle_marker_62f1da34a8680ba8a399cbfb22eead2c.bindPopup(popup_f3955a6ce69a8093c09aab155af0eff0)
+        ;
+
+        
+    
+    
+            var circle_marker_dff26f36c40a88a8da1ecd99919e0587 = L.circleMarker(
+                [44.8873086, 7.3319454],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_0ccc630ca6478d839e292ea1248b50ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a32b49b87a504c3e78e806a7b4955a47 = $(`<div id="html_a32b49b87a504c3e78e806a7b4955a47" style="width: 100.0%; height: 100.0%;">Pinerolo: Seismic Zone 3S</div>`)[0];
+            popup_0ccc630ca6478d839e292ea1248b50ff.setContent(html_a32b49b87a504c3e78e806a7b4955a47);
+        
+
+        circle_marker_dff26f36c40a88a8da1ecd99919e0587.bindPopup(popup_0ccc630ca6478d839e292ea1248b50ff)
+        ;
+
+        
+    
+    
+            var circle_marker_1bab50e24eee5c3631f7f648c8353a91 = L.circleMarker(
+                [40.5173119, 15.8216088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_6ed946fdcf86dfbea5d060e373c08974 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d43a9f56498d428ec92e68f1bc5f6692 = $(`<div id="html_d43a9f56498d428ec92e68f1bc5f6692" style="width: 100.0%; height: 100.0%;">Potenza: Seismic Zone 1</div>`)[0];
+            popup_6ed946fdcf86dfbea5d060e373c08974.setContent(html_d43a9f56498d428ec92e68f1bc5f6692);
+        
+
+        circle_marker_1bab50e24eee5c3631f7f648c8353a91.bindPopup(popup_6ed946fdcf86dfbea5d060e373c08974)
+        ;
+
+        
+    
+    
+            var circle_marker_2f26aab9fff816d4cf7cc987a8471327 = L.circleMarker(
+                [45.0162171, 6.9424531],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_96b8d4aefd67f09280d24bd3b1e14260 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca5c27997d5cf9ef04712b427976817e = $(`<div id="html_ca5c27997d5cf9ef04712b427976817e" style="width: 100.0%; height: 100.0%;">Pragelato: Seismic Zone 3S</div>`)[0];
+            popup_96b8d4aefd67f09280d24bd3b1e14260.setContent(html_ca5c27997d5cf9ef04712b427976817e);
+        
+
+        circle_marker_2f26aab9fff816d4cf7cc987a8471327.bindPopup(popup_96b8d4aefd67f09280d24bd3b1e14260)
+        ;
+
+        
+    
+    
+            var circle_marker_71197bf1e9cf5a761de47777493b93cc = L.circleMarker(
+                [44.3640607, 12.0590095],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_cd491a02e83aeca602b856947f654bbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_989ee0c3a8c0abec840c13aff6f1fd38 = $(`<div id="html_989ee0c3a8c0abec840c13aff6f1fd38" style="width: 100.0%; height: 100.0%;">Ravenna: Seismic Zone 3</div>`)[0];
+            popup_cd491a02e83aeca602b856947f654bbb.setContent(html_989ee0c3a8c0abec840c13aff6f1fd38);
+        
+
+        circle_marker_71197bf1e9cf5a761de47777493b93cc.bindPopup(popup_cd491a02e83aeca602b856947f654bbb)
+        ;
+
+        
+    
+    
+            var circle_marker_f86a1373a597bc22f559d1dbd40a74b9 = L.circleMarker(
+                [44.6086674, 10.5940667],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_56d921a8d4f2b0fc042e798880e88740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8fa906f6e0910c453f1f826f4258eb0 = $(`<div id="html_a8fa906f6e0910c453f1f826f4258eb0" style="width: 100.0%; height: 100.0%;">Reggio nell&#39;Emilia: Seismic Zone 3</div>`)[0];
+            popup_56d921a8d4f2b0fc042e798880e88740.setContent(html_a8fa906f6e0910c453f1f826f4258eb0);
+        
+
+        circle_marker_f86a1373a597bc22f559d1dbd40a74b9.bindPopup(popup_56d921a8d4f2b0fc042e798880e88740)
+        ;
+
+        
+    
+    
+            var circle_marker_63901d5cce4961ad167deded778e5dd3 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_261aebd98bc7ea989d4eb195354d8a64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95112ff0a421a4f748aa91b192003bf7 = $(`<div id="html_95112ff0a421a4f748aa91b192003bf7" style="width: 100.0%; height: 100.0%;">Roma: Seismic Zone 2A-3A-3B</div>`)[0];
+            popup_261aebd98bc7ea989d4eb195354d8a64.setContent(html_95112ff0a421a4f748aa91b192003bf7);
+        
+
+        circle_marker_63901d5cce4961ad167deded778e5dd3.bindPopup(popup_261aebd98bc7ea989d4eb195354d8a64)
+        ;
+
+        
+    
+    
+            var circle_marker_b3621e9130973c30921a1e395f6d9523 = L.circleMarker(
+                [44.6467934, 11.3754491],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_7d73b58ffdf322a6a9817d97ee616299 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdfa08a0196a1e997f26f728ed514846 = $(`<div id="html_cdfa08a0196a1e997f26f728ed514846" style="width: 100.0%; height: 100.0%;">San Giorgio di Piano: Seismic Zone 3</div>`)[0];
+            popup_7d73b58ffdf322a6a9817d97ee616299.setContent(html_cdfa08a0196a1e997f26f728ed514846);
+        
+
+        circle_marker_b3621e9130973c30921a1e395f6d9523.bindPopup(popup_7d73b58ffdf322a6a9817d97ee616299)
+        ;
+
+        
+    
+    
+            var circle_marker_24e2dd36d0b99deb139499f3f68897b2 = L.circleMarker(
+                [45.0677551, 7.6824892],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_3629e5ce445843462e0acbf0ac7176f0);
+        
+    
+        var popup_08606728e1af39972f32ce17d3408904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_332d296170817d5409fa56c999f4dd80 = $(`<div id="html_332d296170817d5409fa56c999f4dd80" style="width: 100.0%; height: 100.0%;">Torino: Seismic Zone 3</div>`)[0];
+            popup_08606728e1af39972f32ce17d3408904.setContent(html_332d296170817d5409fa56c999f4dd80);
+        
+
+        circle_marker_24e2dd36d0b99deb139499f3f68897b2.bindPopup(popup_08606728e1af39972f32ce17d3408904)
+        ;
+
+        
+    
+</script>
+</html>
